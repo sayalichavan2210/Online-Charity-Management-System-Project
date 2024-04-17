@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+   
+   
+    
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 100px;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+   
+    header .Head {
+      font-size: 30px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #fff;
+
+    }
+    nav{
+        margin-right: 150px;
+       justify-content: space-between;
+    }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30PX;
+    }
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover{
+      color: orangered;
+    }
+    a:active{
+      color: aqua;
+    }
+    li .login{
+      background-color: green;
+      width: 80px;
+      padding: 10px;
+      color: #fff;
+      border-radius: 6px;
+    }
+    div{
+      font: bold ;
+      color: blueviolet;
+      text-align: center;
+    }
+   img{
+   margin-top: 82px;
+   width: 1530px;
+   height: 630px;
+   }
+   .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+   }
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}/* Styles for content */
+.content {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: space-between; /* Distribute items evenly */
+    padding: 50px; /* Add padding for spacing */
+}
+
+/* Styles for service boxes */
+
+
+.service-box h2 {
+    margin-bottom: 10px;
+}
+
+.details {
+    display: none;
+    padding-top: 10px;
+}
+
+/* Button style */
+button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service-box {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    font-style: normal;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.service-box:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.service-box h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-box h3 {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.service-box p {
+    color: #888;
+    font-size: 1em;
+}
+
+
+.button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.video-container {
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.Aboutcharity {
+    margin-left: 50px; 
+    height: 200px;
+    width: 400px;
+    border: nono;
+    font-family:'Times New Roman', Times, serif;
+    font: bold;
+  color: white;
+  text-align: left;
+  
+}
+
+footer {
+ top: 500px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.quicklink-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    margin-left: 100px;
+  
+}
+
+.quicklink button {
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #007bff; /* Add border color */
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.quicklink button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    max-width: 600px; /* Set maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding inside the container */
+  margin-left: 100px;
+  color: whitesmoke;
+}
+
+.container h1 {
+    font-size: 24px; /* Set font size for the heading */
+    margin-bottom: 10px; /* Add bottom margin to the heading */
+    color: whitesmoke;
+}
+
+.container p {
+    margin-bottom: 10px; /* Add bottom margin to paragraphs */
+    color: whitesmoke;
+}
+
+#contact-info {
+    border-top: 1px solid #ccc; /* Add top border */
+    padding-top: 10px; /* Add top padding */
+    color: whitesmoke;
+}
+
+#contact-info p {
+    margin-bottom: 5px; /* Add bottom margin to paragraphs inside contact-info */
+}
+
+#contact-info strong {
+    margin-right: 5px; /* Add right margin to strong elements inside contact-info */
+}
+
+#contact-info a {
+    color: #007bff; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.c {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+
+}
+
+.changes {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.social-media-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+.social-media-icons img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the images circular */
+    border: 2px solid #fff; /* Add a white border */
+    transition: transform 0.3s; /* Add a smooth transition */
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+
+  </style>
+</head>
+<body >
+<header>
+    <a class="Head" >ONLINE CHARITY MANAGEMENT SYSTEM</a>
+    <nav>
+        <ul>
+           <li><a href="Home1.php">Home</a></li>
+           <li><a href="Charity.php">Charity</a></li>
+          <li><a href="./ContactUs.php">Contact Us</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="Adminn.php">Admin</a></li>
+       
+           <li><span class="login"><a href="./Login.php">LOGIN</a> </span></li>
+        </ul>
+    </nav>
+  </div> 
+</header>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="./Images/child-ngo-banner.jpg" >
+    </div>
+    <div class="mySlides fade">
+      <img src="./Images/helpingthoselessfortunate (1).jpg">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="./Images/istockphoto-1166634493-612x612.jpg">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="./Images/1.jpg">
+    </div>
+    <div class="mySlides fade">
+      <img src="./Images/saa-2023-buffalo-web-slide_orig.jpg">
+    </div>
+
+  </div>
+  <script>
+    var slideIndex = 0;   
+    var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+function showDetails(service) {
+    var details = document.getElementById(service + '-details');
+    if (details.style.display === 'block') {
+        details.style.display = 'none';
+    } else {
+        details.style.display = 'block';
+    }
+}
+
+</script>
+<form action="services.php" method="post">
+<h1 style="margin-top: 150px;"> OUR SERVICES</h1>
+<div class="content">
+ 
+  <div class="service-box" id="education-service">
+    <h2>Education Support</h2>
+    <h3>Program Details</h3>
+    <p>Our education support program aims to provide 
+      comprehensive assistance to students in need,
+     ensuring they have access to educational resources,
+      mentorship, and opportunities for academic and personal growth.</p>
+    <h3>Goals</h3>
+    <p>Our goals include fostering a supportive learning environment,
+       promoting academic achievement, and empowering students to 
+       reach their full potential.</p>
+    
+    <h3>How You Can Help</h3>
+    <p>You can help us in our education support program
+       by volunteering your time as a mentor or tutor,
+        donating educational materials or resources, or
+         providing financial support to enable students to
+          access educational opportunities.</p>
+  </div>
+  <div class="service-box" id="healthcare-service">
+    <h2>HealthCare Service</h2>
+        <h3>Program Details</h3>
+        <p>Our healthcare service provides
+           comprehensive medical care, including
+            preventive services, diagnostic assessments,
+             and treatment options, to ensure the well-being and health 
+             of our community..</p>
+        <h3>Goals</h2>
+        <p>Ensuring high-quality and compassionate care for all patients.
+Increasing access to healthcare services for underserved populations.</p>
+       
+        <h3>How You Can Help</h3>
+        <p>You can help us in our healthcare service by volunteering
+           your time at our facilities, donating medical supplies or
+            equipment, or contributing financially to support our programs
+             and services. Your support allows us to continue providing high-quality
+              care to those in need..</p>
+  </div>
+  <div class="service-box" id="food-distribution-service">
+    <h2>Food Distribution Service</h2>
+    <h3>Program Details</h3>
+    <p>Our food distribution service aims to alleviate
+     hunger and food insecurity by providing nutritious
+      food to individuals and families in need.</p>
+    <h3>Goals</h3>
+    <p>Providing access to nutritious food for individuals and families facing food insecurity.
+Reducing food waste by distributing surplus food to those in need.</p>
+    
+    <h3>How You Can Help</h3>
+    <p>You can help us in our food distribution service 
+      by volunteering your time to sort and pack food, donating
+       non-perishable food items, or organizing food drives to
+        collect donations. Your support helps us ensure that no 
+        one in our community goes hungry.</p>
+</div>
+
+  </div>
+</div>
+</form>
+    <div class="video-container">
+    <h1>Introduction to our Charity</h1>
+  <video controls>
+  
+    <source src="./Images/Video Concept for NGO to Promote Donations.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<div class="c"> 
+<div class="changes">
+CHANGE THEIR WORLD. CHANGE YOURS. THIS CHANGES EVERYTHING.
+</div>
+<button><a href="Home1.php">BECOME VOLUNTEER</a></button>
+<button><a href="Home1.php">DONATE FOR CAUSE</a></button>
+</div>
+<footer>
+    <p>&copy; 2024 Human Association Charity. All rights reserved.</p>
+    <p>Contact: <a href="https://humanassociatoncharity.com">humanassociatoncharity.com</a></p>
+    <table>
+      <tr>
+        <td>
+     <DIV class="Aboutcharity">
+    <h2 style="text-align: center;">ABOUT CHARITY</h2>
+   
+    Charity refers to the act of giving help,
+     typically in the form of money, resources,
+      or time, to those in need. It plays a
+       fundamental role in many societies and 
+       is crucial for addressing various social
+        issues such as poverty, education, healthcare,
+         and disaster relief. Charitable acts can range
+   from individual donations to large-scale organizational efforts aimed at improving the well-being of others.
+     Charity is often driven by compassion, empathy, and a desire to make a positive impact on the world.
+    </DIV>
+    </td>
+    <td>
+    <div class="quicklink">
+      <h2 style="color: whitesmoke; margin-top :20px;">QUICK LINK</h2>
+      <div class="quicklink-buttons">
+
+      <button>  CAUSES</button>
+      <button>PROJECT</button>
+      <button>GALLARY</button>
+      <button>TERM OF USE</button>
+      <button>LEGAL DESCLAIMER</button>
+      <BUtton>PRIVACY POLICY</BUtton>
+    </div>
+    </div>
+    </td>
+    <td>
+    <div class="container">
+        <h1>Contact Information</h1>
+        <p>Feel free to reach out to us:</p>
+        <div id="contact-info">
+            <?php
+            $companyName = "Human Association Charity";
+            $address = "123 Main Street, City, Country";
+            $phone = "+1 234 567 890";
+            $email = "humanassociation@gmail.com";
+            echo "<p><strong>Email:</strong> <a href='mailto:$email'>$email</a></p>";
+            echo "<p><strong>Company:</strong> $companyName</p>";
+            echo "<p><strong>Address:</strong> $address</p>";
+            echo "<p><strong>Phone:</strong> $phone</p>";
+            ?>
+        </div>
+    </div>
+    </td>
+    </tr>
+    </table>
+    <div class="social-media-icons">
+        <a href="https://www.facebook.com"><img src="./Images/facebook_icon_png.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com"><img src="./Images/twitter_icon_png.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com"><img src="./Images/instragram_icon_png.png" alt="Instagram"></a>
+    </div>
+</footer>
+
+
